@@ -13,9 +13,9 @@
     <meta property="og:description" content="Centro de bienestar desde 1970. Toca aquí para acceder a nuestro WhatsApp, ubicación y redes sociales.">
     <meta property="og:type" content="website">
     
-    <!-- IMPORTANTE: Cuando subas esto a GitHub, asegúrate de cambiar esta URL por el enlace real de tu imagen logo.png subida a internet -->
-    <meta property="og:image" content="https://TU_USUARIO.github.io/TU_REPOSITORIO/logo.png">
-    <meta property="og:url" content="https://TU_USUARIO.github.io/TU_REPOSITORIO/">
+    <!-- Enlaces exactos para tu repositorio en GitHub -->
+    <meta property="og:image" content="https://matzulchipix-ship-it.github.io/Tarjeta-Mundo-Natural/logo.png">
+    <meta property="og:url" content="https://matzulchipix-ship-it.github.io/Tarjeta-Mundo-Natural/">
 
     <!-- Tailwind CSS & Google Fonts -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -95,22 +95,21 @@
     <div class="glow-1"></div>
     <div class="glow-2"></div>
 
-    <div class="glass-card rounded-[2.5rem] w-full max-w-[400px] p-8 relative overflow-hidden">
+    <div class="glass-card rounded-[2.5rem] w-full max-w-[400px] p-8 relative overflow-hidden z-10">
         
         <!-- Reflejo sutil en el borde superior -->
         <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
 
-        <!-- LOGO -->
+        <!-- LOGO CON RUTA ABSOLUTA DEFINITIVA -->
         <div class="flex justify-center mb-6 relative">
             <div class="absolute inset-0 bg-brand/20 blur-2xl rounded-full"></div>
-            <!-- Tu logo local (ya configurado con la ruta de tu PC) -->
-            <img src="file:///C:/Users/byron/.gemini/antigravity/brain/6c885a5f-dfd3-4647-adf4-a1a4d02ef565/.user_uploaded/media_1791223095973.png" alt="Logo Mundo Natural" class="w-44 h-44 object-contain drop-shadow-2xl relative z-10 hover:scale-105 transition-transform duration-500">
+            <img src="https://matzulchipix-ship-it.github.io/Tarjeta-Mundo-Natural/logo.png" alt="Logo Mundo Natural" class="w-44 h-44 object-contain drop-shadow-2xl relative z-10 hover:scale-105 transition-transform duration-500">
         </div>
 
         <!-- Textos principales -->
         <div class="text-center mb-8">
             <h1 class="text-3xl font-bold tracking-tight text-white mb-1">Mundo Natural</h1>
-            <p class="text-brand font-medium text-xs tracking-[0.3em] uppercase opacity-90">Wellness Center</p>
+            <p class="text-brand font-medium text-[11px] tracking-[0.3em] uppercase opacity-90">Wellness Center</p>
             
             <div class="mt-5 flex items-center justify-center text-gray-300 text-[13px]">
                 <i class="fa-solid fa-location-dot text-brand mr-2"></i>
@@ -120,10 +119,10 @@
 
         <!-- Botones de Acción (Guardar y Compartir) -->
         <div class="flex gap-4 mb-8">
-            <button onclick="downloadVCard()" class="flex-1 bg-brand hover:bg-brandDark text-white py-3.5 rounded-2xl font-semibold flex items-center justify-center gap-2 transition-all shadow-[0_0_20px_rgba(122,193,66,0.3)] hover:shadow-[0_0_30px_rgba(122,193,66,0.5)] hover:-translate-y-1">
+            <button onclick="downloadVCard()" class="flex-1 bg-brand hover:bg-brandDark text-white py-3.5 rounded-2xl font-semibold flex items-center justify-center gap-2 transition-all shadow-[0_0_20px_rgba(122,193,66,0.3)] hover:shadow-[0_0_30px_rgba(122,193,66,0.5)] hover:-translate-y-1 cursor-pointer">
                 <i class="fa-solid fa-address-card"></i> Guardar
             </button>
-            <button onclick="shareCard()" class="flex-1 glass-btn text-white py-3.5 rounded-2xl font-semibold flex items-center justify-center gap-2">
+            <button onclick="shareCard()" class="flex-1 glass-btn text-white py-3.5 rounded-2xl font-semibold flex items-center justify-center gap-2 cursor-pointer">
                 <i class="fa-solid fa-share-nodes"></i> Compartir
             </button>
         </div>
