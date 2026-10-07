@@ -5,16 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mundo Natural - Wellness Center</title>
 
-    <!-- ========================================== -->
-    <!-- ETIQUETAS PARA VISTA PREVIA PROFESIONAL    -->
-    <!-- (WhatsApp, Facebook, iMessage, etc.)       -->
-    <!-- ========================================== -->
+    <!-- Etiquetas Open Graph -->
     <meta property="og:title" content="Mundo Natural | Wellness Center">
     <meta property="og:description" content="Centro de bienestar desde 1970. Toca aquí para acceder a nuestro WhatsApp, ubicación y redes sociales.">
     <meta property="og:type" content="website">
     
-    <!-- Enlaces exactos para tu repositorio en GitHub -->
-    <meta property="og:image" content="https://matzulchipix-ship-it.github.io/Tarjeta-Mundo-Natural/logo.png">
+    <!-- RUTA EXACTA CON MAYÚSCULAS PARA QUE GITHUB LO RECONOZCA -->
+    <meta property="og:image" content="https://matzulchipix-ship-it.github.io/Tarjeta-Mundo-Natural/logo.PNG">
     <meta property="og:url" content="https://matzulchipix-ship-it.github.io/Tarjeta-Mundo-Natural/">
 
     <!-- Tailwind CSS & Google Fonts -->
@@ -34,54 +31,13 @@
     </script>
     
     <style>
-        body {
-            /* Fondo oscuro premium */
-            background-color: #0b1120;
-            color: #ffffff;
-            overflow-x: hidden;
-        }
-        
-        /* Luces de fondo (Aura verde) */
-        .glow-1 {
-            position: absolute; width: 300px; height: 300px;
-            background: radial-gradient(circle, rgba(122,193,66,0.3) 0%, rgba(0,0,0,0) 70%);
-            top: -100px; left: -100px; border-radius: 50%; filter: blur(40px);
-            z-index: -1; animation: float 6s ease-in-out infinite alternate;
-        }
-        .glow-2 {
-            position: absolute; width: 350px; height: 350px;
-            background: radial-gradient(circle, rgba(47,86,38,0.4) 0%, rgba(0,0,0,0) 70%);
-            bottom: -150px; right: -100px; border-radius: 50%; filter: blur(50px);
-            z-index: -1; animation: float 8s ease-in-out infinite alternate-reverse;
-        }
-        @keyframes float {
-            0% { transform: translateY(0) scale(1); }
-            100% { transform: translateY(30px) scale(1.1); }
-        }
-
-        /* Tarjeta de Cristal Esmerilado (Glassmorphism) */
-        .glass-card {
-            background: rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
-        }
-
-        /* Botones de Cristal */
-        .glass-btn {
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid rgba(255, 255, 255, 0.06);
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .glass-btn:hover {
-            background: rgba(255, 255, 255, 0.1);
-            transform: translateY(-3px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-        }
-
-        /* Efectos de luces al tocar los íconos */
+        body { background-color: #0b1120; color: #ffffff; overflow-x: hidden; }
+        .glow-1 { position: absolute; width: 300px; height: 300px; background: radial-gradient(circle, rgba(122,193,66,0.3) 0%, rgba(0,0,0,0) 70%); top: -100px; left: -100px; border-radius: 50%; filter: blur(40px); z-index: -1; animation: float 6s ease-in-out infinite alternate; }
+        .glow-2 { position: absolute; width: 350px; height: 350px; background: radial-gradient(circle, rgba(47,86,38,0.4) 0%, rgba(0,0,0,0) 70%); bottom: -150px; right: -100px; border-radius: 50%; filter: blur(50px); z-index: -1; animation: float 8s ease-in-out infinite alternate-reverse; }
+        @keyframes float { 0% { transform: translateY(0) scale(1); } 100% { transform: translateY(30px) scale(1.1); } }
+        .glass-card { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.08); box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4); }
+        .glass-btn { background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.06); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .glass-btn:hover { background: rgba(255, 255, 255, 0.1); transform: translateY(-3px); border: 1px solid rgba(255, 255, 255, 0.2); box-shadow: 0 10px 25px rgba(0,0,0,0.3); }
         .btn-wa:hover i { text-shadow: 0 0 15px #25D366; color: #25D366; }
         .btn-ig:hover i { text-shadow: 0 0 15px #e1306c; color: #e1306c; }
         .btn-fb:hover i { text-shadow: 0 0 15px #1877F2; color: #1877F2; }
@@ -91,33 +47,27 @@
 </head>
 <body class="min-h-screen flex items-center justify-center p-4 sm:p-8 relative">
 
-    <!-- Luces de ambiente en el fondo -->
     <div class="glow-1"></div>
     <div class="glow-2"></div>
 
     <div class="glass-card rounded-[2.5rem] w-full max-w-[400px] p-8 relative overflow-hidden z-10">
-        
-        <!-- Reflejo sutil en el borde superior -->
         <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
 
-        <!-- LOGO CON RUTA ABSOLUTA DEFINITIVA -->
+        <!-- LOGO CON MAYÚSCULAS PARA QUE COINCIDA CON GITHUB -->
         <div class="flex justify-center mb-6 relative">
             <div class="absolute inset-0 bg-brand/20 blur-2xl rounded-full"></div>
-            <img src="https://matzulchipix-ship-it.github.io/Tarjeta-Mundo-Natural/logo.png" alt="Logo Mundo Natural" class="w-44 h-44 object-contain drop-shadow-2xl relative z-10 hover:scale-105 transition-transform duration-500">
+            <img src="logo.PNG" alt="Logo Mundo Natural" class="w-44 h-44 object-contain drop-shadow-2xl relative z-10 hover:scale-105 transition-transform duration-500">
         </div>
 
-        <!-- Textos principales -->
         <div class="text-center mb-8">
             <h1 class="text-3xl font-bold tracking-tight text-white mb-1">Mundo Natural</h1>
             <p class="text-brand font-medium text-[11px] tracking-[0.3em] uppercase opacity-90">Wellness Center</p>
-            
             <div class="mt-5 flex items-center justify-center text-gray-300 text-[13px]">
                 <i class="fa-solid fa-location-dot text-brand mr-2"></i>
                 <p class="font-light text-left">Calle Real de Jocotenango No. 30<br>Antigua Guatemala</p>
             </div>
         </div>
 
-        <!-- Botones de Acción (Guardar y Compartir) -->
         <div class="flex gap-4 mb-8">
             <button onclick="downloadVCard()" class="flex-1 bg-brand hover:bg-brandDark text-white py-3.5 rounded-2xl font-semibold flex items-center justify-center gap-2 transition-all shadow-[0_0_20px_rgba(122,193,66,0.3)] hover:shadow-[0_0_30px_rgba(122,193,66,0.5)] hover:-translate-y-1 cursor-pointer">
                 <i class="fa-solid fa-address-card"></i> Guardar
@@ -127,68 +77,35 @@
             </button>
         </div>
 
-        <!-- Enlaces a redes y contacto -->
         <div class="space-y-3">
-            
             <a href="https://wa.me/50243127594" target="_blank" class="glass-btn btn-wa flex items-center p-4 rounded-2xl group cursor-pointer">
-                <div class="w-12 h-12 rounded-xl flex items-center justify-center text-3xl text-gray-400 transition-colors">
-                    <i class="fa-brands fa-whatsapp transition-all duration-300"></i>
-                </div>
-                <div class="ml-3 flex-1">
-                    <p class="text-[16px] font-semibold text-white">WhatsApp</p>
-                    <p class="text-[13px] text-gray-400 font-light">+502 4312-7594</p>
-                </div>
+                <div class="w-12 h-12 rounded-xl flex items-center justify-center text-3xl text-gray-400 transition-colors"><i class="fa-brands fa-whatsapp transition-all duration-300"></i></div>
+                <div class="ml-3 flex-1"><p class="text-[16px] font-semibold text-white">WhatsApp</p><p class="text-[13px] text-gray-400 font-light">+502 4312-7594</p></div>
                 <i class="fa-solid fa-arrow-right text-gray-600 group-hover:text-white transition-colors text-sm"></i>
             </a>
-
             <a href="tel:+50278310379" class="glass-btn btn-tel flex items-center p-4 rounded-2xl group cursor-pointer">
-                <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl text-gray-400 transition-colors">
-                    <i class="fa-solid fa-phone transition-all duration-300"></i>
-                </div>
-                <div class="ml-3 flex-1">
-                    <p class="text-[16px] font-semibold text-white">Llamar</p>
-                    <p class="text-[13px] text-gray-400 font-light">7831-0379 / 1902</p>
-                </div>
+                <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl text-gray-400 transition-colors"><i class="fa-solid fa-phone transition-all duration-300"></i></div>
+                <div class="ml-3 flex-1"><p class="text-[16px] font-semibold text-white">Llamar</p><p class="text-[13px] text-gray-400 font-light">7831-0379 / 1902</p></div>
                 <i class="fa-solid fa-arrow-right text-gray-600 group-hover:text-white transition-colors text-sm"></i>
             </a>
-
             <a href="https://instagram.com/mundonaturalgt" target="_blank" class="glass-btn btn-ig flex items-center p-4 rounded-2xl group cursor-pointer">
-                <div class="w-12 h-12 rounded-xl flex items-center justify-center text-3xl text-gray-400 transition-colors">
-                    <i class="fa-brands fa-instagram transition-all duration-300"></i>
-                </div>
-                <div class="ml-3 flex-1">
-                    <p class="text-[16px] font-semibold text-white">Instagram</p>
-                    <p class="text-[13px] text-gray-400 font-light">@mundonaturalgt</p>
-                </div>
+                <div class="w-12 h-12 rounded-xl flex items-center justify-center text-3xl text-gray-400 transition-colors"><i class="fa-brands fa-instagram transition-all duration-300"></i></div>
+                <div class="ml-3 flex-1"><p class="text-[16px] font-semibold text-white">Instagram</p><p class="text-[13px] text-gray-400 font-light">@mundonaturalgt</p></div>
                 <i class="fa-solid fa-arrow-right text-gray-600 group-hover:text-white transition-colors text-sm"></i>
             </a>
-
             <a href="https://facebook.com/MundoNaturalGuatemala" target="_blank" class="glass-btn btn-fb flex items-center p-4 rounded-2xl group cursor-pointer">
-                <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl text-gray-400 transition-colors">
-                    <i class="fa-brands fa-facebook-f transition-all duration-300"></i>
-                </div>
-                <div class="ml-3 flex-1">
-                    <p class="text-[16px] font-semibold text-white">Facebook</p>
-                    <p class="text-[13px] text-gray-400 font-light">Mundo Natural Guatemala</p>
-                </div>
+                <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl text-gray-400 transition-colors"><i class="fa-brands fa-facebook-f transition-all duration-300"></i></div>
+                <div class="ml-3 flex-1"><p class="text-[16px] font-semibold text-white">Facebook</p><p class="text-[13px] text-gray-400 font-light">Mundo Natural Guatemala</p></div>
                 <i class="fa-solid fa-arrow-right text-gray-600 group-hover:text-white transition-colors text-sm"></i>
             </a>
-
             <a href="https://www.mundonaturalgt.com" target="_blank" class="glass-btn btn-web flex items-center p-4 rounded-2xl group cursor-pointer">
-                <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl text-gray-400 transition-colors">
-                    <i class="fa-solid fa-globe transition-all duration-300"></i>
-                </div>
-                <div class="ml-3 flex-1">
-                    <p class="text-[16px] font-semibold text-white">Sitio Web</p>
-                    <p class="text-[13px] text-gray-400 font-light">www.mundonaturalgt.com</p>
-                </div>
+                <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl text-gray-400 transition-colors"><i class="fa-solid fa-globe transition-all duration-300"></i></div>
+                <div class="ml-3 flex-1"><p class="text-[16px] font-semibold text-white">Sitio Web</p><p class="text-[13px] text-gray-400 font-light">www.mundonaturalgt.com</p></div>
                 <i class="fa-solid fa-arrow-right text-gray-600 group-hover:text-white transition-colors text-sm"></i>
             </a>
-
         </div>
     </div>
 
-    <!-- Scripts de interactividad -->
     <script>
         function downloadVCard() {
             const vcard = `BEGIN:VCARD\nVERSION:3.0\nFN:Mundo Natural\nORG:Mundo Natural - Wellness Center desde 1970\nTEL;TYPE=WORK,VOICE:+502 7831-0379\nTEL;TYPE=WORK,VOICE:+502 7831-1902\nTEL;TYPE=CELL,VOICE:+502 4312-7594\nEMAIL:spamundonatural@gmail.com\nURL:https://www.mundonaturalgt.com\nADR;TYPE=WORK:;;Calle Real de Jocotenango No. 30;Antigua Guatemala;;;Guatemala\nEND:VCARD`;
