@@ -44,7 +44,7 @@
         .btn-fb:hover i { text-shadow: 0 0 15px #1877F2; color: #1877F2; }
         .btn-tel:hover i { text-shadow: 0 0 15px #7AC142; color: #7AC142; }
         .btn-web:hover i { text-shadow: 0 0 15px #ffffff; color: #ffffff; }
-        .btn-mail:hover i { text-shadow: 0 0 15px #EA4335; color: #EA4335; } /* Rojo para Gmail */
+        .btn-mail:hover i { text-shadow: 0 0 15px #EA4335; color: #EA4335; }
     </style>
 </head>
 <body class="min-h-screen flex items-center justify-center p-4 sm:p-8 relative">
@@ -64,9 +64,14 @@
         <div class="text-center mb-8">
             <h1 class="text-3xl font-bold tracking-tight text-white mb-1">Mundo Natural</h1>
             <p class="text-brand font-medium text-[11px] tracking-[0.3em] uppercase opacity-90">Wellness Center</p>
-            <div class="mt-5 flex items-center justify-center text-gray-300 text-[13px]">
-                <i class="fa-solid fa-location-dot text-brand mr-2"></i>
-                <p class="font-light text-left">Calle Real de Jocotenango No. 30<br>Antigua Guatemala</p>
+            
+            <!-- UBICACIÓN CLICKEABLE A GOOGLE MAPS -->
+            <div class="mt-5 flex justify-center">
+                <a href="https://www.google.com/maps/search/?api=1&query=Calle+Real+de+Jocotenango+No.+30,+Antigua+Guatemala" target="_blank" class="flex items-center text-gray-300 text-[13px] hover:text-white transition-all group cursor-pointer bg-white/5 px-4 py-2 rounded-xl border border-white/5 hover:border-white/10 hover:bg-white/10">
+                    <i class="fa-solid fa-location-dot text-brand mr-3 text-lg group-hover:drop-shadow-[0_0_8px_rgba(122,193,66,0.8)] transition-all"></i>
+                    <p class="font-light text-left">Calle Real de Jocotenango No. 30<br>Antigua Guatemala</p>
+                    <i class="fa-solid fa-arrow-up-right-from-square ml-3 text-gray-500 group-hover:text-brand transition-colors text-xs"></i>
+                </a>
             </div>
         </div>
 
@@ -95,21 +100,16 @@
                 <div class="ml-3 flex-1"><p class="text-[16px] font-semibold text-white">Instagram</p><p class="text-[13px] text-gray-400 font-light">@mundonaturalgt</p></div>
                 <i class="fa-solid fa-arrow-right text-gray-600 group-hover:text-white transition-colors text-sm"></i>
             </a>
-            
-            <!-- ENLACE DE FACEBOOK CORREGIDO -->
             <a href="https://www.facebook.com/share/1DsL7zGB9p/?mibextid=wwXIfr" target="_blank" class="glass-btn btn-fb flex items-center p-4 rounded-2xl group cursor-pointer">
                 <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl text-gray-400 transition-colors"><i class="fa-brands fa-facebook-f transition-all duration-300"></i></div>
                 <div class="ml-3 flex-1"><p class="text-[16px] font-semibold text-white">Facebook</p><p class="text-[13px] text-gray-400 font-light">Mundo Natural Guatemala</p></div>
                 <i class="fa-solid fa-arrow-right text-gray-600 group-hover:text-white transition-colors text-sm"></i>
             </a>
-            
-            <!-- NUEVO BOTÓN DE CORREO -->
             <a href="mailto:spamundonatural@gmail.com" class="glass-btn btn-mail flex items-center p-4 rounded-2xl group cursor-pointer">
                 <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl text-gray-400 transition-colors"><i class="fa-solid fa-envelope transition-all duration-300"></i></div>
-                <div class="ml-3 flex-1"><p class="text-[16px] font-semibold text-white">Correo Electrónico</p><p class="text-[13px] text-gray-400 font-light">spamundonatural@gmail.com</p></div>
+                <div class="ml-3 flex-1"><p class="text-[16px] font-semibold text-white">Correo</p><p class="text-[13px] text-gray-400 font-light">spamundonatural@gmail.com</p></div>
                 <i class="fa-solid fa-arrow-right text-gray-600 group-hover:text-white transition-colors text-sm"></i>
             </a>
-
             <a href="https://www.mundonaturalgt.com" target="_blank" class="glass-btn btn-web flex items-center p-4 rounded-2xl group cursor-pointer">
                 <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl text-gray-400 transition-colors"><i class="fa-solid fa-globe transition-all duration-300"></i></div>
                 <div class="ml-3 flex-1"><p class="text-[16px] font-semibold text-white">Sitio Web</p><p class="text-[13px] text-gray-400 font-light">www.mundonaturalgt.com</p></div>
